@@ -57,3 +57,128 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel Task Manager
+
+A simple Task Manager web application built with Laravel and MySQL.
+
+## Features
+
+* Create new tasks
+* Add task descriptions
+* Set due dates
+* Edit existing tasks
+* Mark tasks as completed
+* Delete tasks
+* Clean and responsive interface
+
+## Technologies Used
+
+* Laravel
+* PHP
+* MySQL
+* Bootstrap
+* HTML/CSS
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Mattenics2003/laravel-task-manager-pro.git
+```
+
+2. Go to the project folder:
+
+```bash
+cd YOUR_REPOSITORY_NAME
+```
+
+3. Install dependencies:
+
+```bash
+composer install
+```
+
+4. Copy the environment file:
+
+```bash
+cp .env.example .env
+```
+
+5. Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+6. Configure your database in the `.env` file.
+
+7. Run migrations:
+
+```bash
+php artisan migrate
+```
+
+8. Start the development server:
+
+```bash
+php artisan serve
+```
+
+9. Open:
+
+```
+http://127.0.0.1:8000
+```
+
+## Future Improvements
+
+* User authentication
+* Task categories
+* Search and filtering
+* Dashboard statistics
+
+## Author
+
+Matt Santos
+Aspiring Web Developer and Software Engineer
+
+
+## Database
+
+This project uses **MySQL** as its database.
+
+### Tasks Table Structure
+
+| Column      | Type         |
+| ----------- | ------------ |
+| id          | BIGINT       |
+| title       | VARCHAR(255) |
+| description | TEXT         |
+| due_date    | DATE         |
+| completed   | BOOLEAN      |
+| created_at  | TIMESTAMP    |
+| updated_at  | TIMESTAMP    |
+
+### Database Setup
+
+1. Create a MySQL database (for example: `task_manager`).
+2. Update your `.env` file:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=todo_up //name of your created DB
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+3. Run the migrations:
+
+```bash
+php artisan migrate
+```
+
+
